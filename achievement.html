@@ -30,19 +30,22 @@
 
         <!-- topHeader -->
         <div class="row TopHeader">
-            <div class="col-sm-8   TopHeader_1">
-                <a href="#" target="_blank"><i class="fas fa-lock tic"></i> Online Admission & Enquiry</a>
-                <a href="#" target="_blank"><i class="fas fa-user tic"></i> Grievance Redressal</a>
+      
+            <div class="col-sm-8  TopHeader_1"> 
+              <ul  class="list-inline ms-5">
+                <li class="list-inline-item"> <a href="princeipal.html" target="_blank"><i class="fas fa-lock tic"></i> Online Admission & Enquiry</a></li>
+                 <li class="list-inline-item"><a href="princeipal.html" target="_blank"><i class="fas fa-user tic"></i> Grievance Redressal</a></li>
+              </ul>
             </div>
+          
             <div class="col-sm-4 text-center" style="margin-top: 10px;">
-                <a href="#"> <i class="fab fa-google S_icon"></i></a>
-                <a href="#"><i class="fab fa-youtube  S_icon"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in S_icon"></i></a>
-                <a href="#"><i class="fab fa-twitter S_icon"></i></a>
-                <a href="#"> <i class="fab fa-facebook-messenger S_icon"></i></a>
+              <a href="#"> <i class="fab fa-google S_icon"></i></a>
+              <a href="#"><i class="fab fa-youtube  S_icon"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in S_icon"></i></a>
+              <a href="#"><i class="fab fa-twitter S_icon"></i></a>
+              <a href="#"> <i class="fab fa-facebook-messenger S_icon"></i></a>
             </div>
-        </div>
-
+          </div>
         <!-- topheader_2nd -->
 
         <div class="row" style="border: 1px solid ;">
@@ -187,8 +190,12 @@
         <div class="row mt-5">
             <div class="col-sm-12">
                 <div class="container">
-                    <div class="about mb-3" data-aos="fade-up"><span class="about_1  ps-3 pe-5"><i
-                                class="fab fa-staylinked" style="color:white;"></i>Our <b>Achievements </b></span></div>
+                   <div class="row">
+                    <div class="col-sm-4"> <div class="about mb-3" data-aos="fade-up"><span class="about_1  ps-3 pe-5" style="font-size: 23px;"><i
+                        class="fab fa-staylinked" style="color:white;"></i>Our <b>Achievements </b></span></div>
+                    </div>
+                    <div class="col-sm-8"></div>
+                   </div>
                     <!-- *************** -->
                       <div class="row mt-5">
                         <div class="col-sm-3 about_img p-0 mb-4">
@@ -254,6 +261,34 @@
         </div>
 
         <!-- impotant links -->
+        <div class="row mt-5">
+            <div class="col-sm-12 p-0" data-aos="fade-up">
+              <div class="container-fluid mt-5">
+              <div class="row">
+                <div class="col-sm-4">
+                    <div class="about mb-3" data-aos="fade-up"><span class="about_1  ps-3 pe-5"><i class="fab fa-staylinked" style="color:white;">
+                    </i> Quick <b>Links</b></b></span></div>
+                </div>
+                <div class="col-sm-8"></div>
+              </div>
+                <div class="container mt-5">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="owl-carousel my-owl2 owl-theme">
+                        <div class="item"><img src="images/link3.jpg" class="img-fluid" style="height:100%;width:100%;"></div>
+                        <div class="item"><img src="images/link2.jpg" class="img-fluid"></div>
+                        <div class="item"><img src="images/link1.jpg" class="img-fluid pt-5"></div>
+                        <div class="item"><img src="images/link4.jpg" class="img-fluid"></div>
+                        <div class="item"><img src="images/link5.jpg" class="img-fluid"></div>
+                        <div class="item"><img src="images/link6.jpg" class="img-fluid"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          </div>
 
 
 
@@ -345,31 +380,43 @@
         duration: 1500
     });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    $(document).ready(function () {
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            margin: 10,
-            nav: true,
-            loop: true,
-            autoplay: true,
-            autoplayHoverPause: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                1000: {
-                    items: 3
-                }
-            }
-        })
-    })
-</script>
-
+<!-- owl -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+       $('.my-owl1').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+   $('.my-owl2').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+  </script>
 </html>
