@@ -5,15 +5,15 @@
 .TopHeader_1 a{
     text-decoration: none;
     color: white;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     font-size: 15px;
     display: block;
-    text-align: center;
+    /* text-align: center; */
    
 }
 .TopHeader_1 {
     margin-top: 12px;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
 }
 
 .S_icon
@@ -65,7 +65,7 @@ border-radius:50%;
 }
 .about{
     border-bottom: 3px solid black ;
-    width: 30%;
+   max-width: 80%;
 }
 .images_1{
     
@@ -75,7 +75,7 @@ border-radius:50%;
      background-size: 100% 100%;
     border:2px solid #d72d24;
     position: relative;
-    bottom:40px;
+    /* bottom:40px; */
 }
 .images_2{
   height:260px;
@@ -232,7 +232,8 @@ border:2px solid #d72d24;
 .student_img{
     text-align: center;
     position: relative;
-    top: 50px;
+    /* top: 50px; */
+    margin-top: 4%;
 }
 .footer{
     min-height: 300px;
