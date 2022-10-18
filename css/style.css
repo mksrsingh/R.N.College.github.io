@@ -151,14 +151,16 @@ border:2px solid #d72d24;
     font-weight: normal;
 }
 .inner_items{
-    height: 280px;
+    min-height: 19rem;
     border: 3px solid;
-    width: 80%;
-    margin-left: 100px;
+    min-width: 15rem;
+    /* margin-left: 0px; */
+    /* left: -67px; */
     margin-top: 60px;
     background: #fafafa;
     position: relative;
     bottom: 33px;
+    text-align: center;
 }
 .inner_items h5{
     text-align: center;
@@ -176,9 +178,18 @@ border:2px solid #d72d24;
 }
 .test_img{
     position: relative;
-    top: 250px;
-    left: 343px;
+    /* top: 250px;
+    left: 343px; */
+    text-align: center;
+    top: 36px;
 }
+.img_car{
+    width: 12%;
+    border: 3px solid red;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 32px;
+} 
 .back-img{
     margin: auto;
     min-height: 320px;
